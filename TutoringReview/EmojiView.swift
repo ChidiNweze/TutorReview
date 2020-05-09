@@ -9,13 +9,28 @@
 import SwiftUI
 
 struct EmojiView: View {
+    var rating: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        switch rating {
+            case "Thumbs Up":
+                return Text("👍")
+            case "Thumbs Down":
+                return Text("👎")
+            case "Neutral":
+                return Text("😐")
+            default:
+                return Text("😴")
+        }
+    }
+    //making a better looking initializer
+    init(for rating: String) {
+        self.rating = rating
     }
 }
 
 struct EmojiView_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiView()
+        EmojiView(for: "Thumbs Up")
     }
 }
