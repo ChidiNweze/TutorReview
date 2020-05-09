@@ -14,6 +14,7 @@
 		2BC944A724663CD700ACDAB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC944A624663CD700ACDAB3 /* Assets.xcassets */; };
 		2BC944AA24663CD700ACDAB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC944A924663CD700ACDAB3 /* Preview Assets.xcassets */; };
 		2BC944AD24663CD700ACDAB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC944AB24663CD700ACDAB3 /* LaunchScreen.storyboard */; };
+		2BC944B7246748A700ACDAB3 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC944B6246748A700ACDAB3 /* EmojiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2BC944A924663CD700ACDAB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BC944AC24663CD700ACDAB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BC944AE24663CD700ACDAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BC944B6246748A700ACDAB3 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				2BC9449D24663CD500ACDAB3 /* AppDelegate.swift */,
 				2BC9449F24663CD500ACDAB3 /* SceneDelegate.swift */,
 				2BC944A424663CD500ACDAB3 /* ContentView.swift */,
+				2BC944B6246748A700ACDAB3 /* EmojiView.swift */,
 				2BC944A624663CD700ACDAB3 /* Assets.xcassets */,
 				2BC944AB24663CD700ACDAB3 /* LaunchScreen.storyboard */,
 				2BC944AE24663CD700ACDAB3 /* Info.plist */,
@@ -153,6 +156,7 @@
 				2BC944A324663CD500ACDAB3 /* TutoringReview.xcdatamodeld in Sources */,
 				2BC944A524663CD500ACDAB3 /* ContentView.swift in Sources */,
 				2BC944A024663CD500ACDAB3 /* SceneDelegate.swift in Sources */,
+				2BC944B7246748A700ACDAB3 /* EmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
