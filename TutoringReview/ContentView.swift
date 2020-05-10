@@ -21,14 +21,17 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        List {
-            /*each review needs a unique identifier. Instead of making the Review struct conform to the identifiable protocol, I decided that each student can only review me once. Therefore, each student is a unique identifier*/
-            ForEach(reviews, id: \.student) { review in
-                HStack {
-                    EmojiView(for: review.rating)
-                    Text(review.student)
+        NavigationView {
+            List {
+                /*each review needs a unique identifier. Instead of making the Review struct conform to the identifiable protocol, I decided that each student can only review me once. Therefore, each student is a unique identifier*/
+                ForEach(reviews, id: \.student) { review in
+                    NavigationLink(destination: Text(review.comment)) {
+                        //implicit HStack
+                        EmojiView(for: review.rating)
+                        Text(review.student)
+                    }
                 }
-            }
+            }.navigationBarTitle("Student Reviews")
         }
     }
 }
