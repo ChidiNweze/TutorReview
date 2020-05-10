@@ -8,17 +8,14 @@
 
 import SwiftUI
 
-struct Review {
-    var student: String
-    var comment: String
-    var rating: String
-}
-
 struct ContentView: View {
+    @FetchRequest(entity: Review.entity(), sortDescriptors: [
+        NSSortDescriptor(keyPath: \Review.student, ascending: true)
+    ])  var reviews: FetchedResults<Review>
     
-    let reviews = [
-        Review(student: "John Doe", comment: "Moved through content a little too fast, but then was very helpful and clear when it came to my specific questions.", rating: "Neutral"), Review(student: "Jane Doe", comment: "Loved all the study tips! Jumbling up the order of math exercises was daunting a first but paid off when the test came around.", rating: "Thumbs Up"), Review(student: "George Washington", comment: "Explanation style was a bit unprofessional in my opinion.", rating: "Thumbs Down")
-    ]
+//    let reviews = [
+//        Review(student: "John Doe", comment: "Moved through content a little too fast, but then was very helpful and clear when it came to my specific questions.", rating: "Neutral"), Review(student: "Jane Doe", comment: "Loved all the study tips! Jumbling up the order of math exercises was daunting a first but paid off when the test came around.", rating: "Thumbs Up"), Review(student: "George Washington", comment: "Explanation style was a bit unprofessional in my opinion.", rating: "Thumbs Down")
+//    ]
     
     var body: some View {
         NavigationView {

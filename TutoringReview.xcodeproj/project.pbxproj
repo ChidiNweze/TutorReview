@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0183B62468B494003A2577 /* Review+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0183B42468B494003A2577 /* Review+CoreDataClass.swift */; };
+		2B0183B72468B494003A2577 /* Review+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0183B52468B494003A2577 /* Review+CoreDataProperties.swift */; };
 		2BC9449E24663CD500ACDAB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9449D24663CD500ACDAB3 /* AppDelegate.swift */; };
 		2BC944A024663CD500ACDAB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9449F24663CD500ACDAB3 /* SceneDelegate.swift */; };
 		2BC944A324663CD500ACDAB3 /* TutoringReview.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BC944A124663CD500ACDAB3 /* TutoringReview.xcdatamodeld */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0183B42468B494003A2577 /* Review+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2B0183B52468B494003A2577 /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2BC9449A24663CD500ACDAB3 /* TutoringReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutoringReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC9449D24663CD500ACDAB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC9449F24663CD500ACDAB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		2BC9449C24663CD500ACDAB3 /* TutoringReview */ = {
 			isa = PBXGroup;
 			children = (
+				2B0183B42468B494003A2577 /* Review+CoreDataClass.swift */,
+				2B0183B52468B494003A2577 /* Review+CoreDataProperties.swift */,
 				2BC9449D24663CD500ACDAB3 /* AppDelegate.swift */,
 				2BC9449F24663CD500ACDAB3 /* SceneDelegate.swift */,
 				2BC944A424663CD500ACDAB3 /* ContentView.swift */,
@@ -152,11 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0183B72468B494003A2577 /* Review+CoreDataProperties.swift in Sources */,
 				2BC9449E24663CD500ACDAB3 /* AppDelegate.swift in Sources */,
 				2BC944A324663CD500ACDAB3 /* TutoringReview.xcdatamodeld in Sources */,
 				2BC944A524663CD500ACDAB3 /* ContentView.swift in Sources */,
 				2BC944A024663CD500ACDAB3 /* SceneDelegate.swift in Sources */,
 				2BC944B7246748A700ACDAB3 /* EmojiView.swift in Sources */,
+				2B0183B62468B494003A2577 /* Review+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
