@@ -11,9 +11,9 @@ import SwiftUI
 struct AddView: View {
     @Environment(\.managedObjectContext) var moc
     
-    @State var student = ""
-    @State var comment = ""
-    @State var rating = "Silence"
+    @State private var student = ""
+    @State private var comment = ""
+    @State private var rating = "Silence"
     let ratings = ["Thumbs Up", "Neutral", "Thumbs Down", "Silence"]
     
     var body: some View {
