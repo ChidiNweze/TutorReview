@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) var moc
     @FetchRequest(entity: Review.entity(), sortDescriptors: [
         NSSortDescriptor(keyPath: \Review.student, ascending: true)
     ])  var reviews: FetchedResults<Review>
+    @State private var showingAddReview = false
     
 //    let reviews = [
 //        Review(student: "John Doe", comment: "Moved through content a little too fast, but then was very helpful and clear when it came to my specific questions.", rating: "Neutral"), Review(student: "Jane Doe", comment: "Loved all the study tips! Jumbling up the order of math exercises was daunting a first but paid off when the test came around.", rating: "Thumbs Up"), Review(student: "George Washington", comment: "Explanation style was a bit unprofessional in my opinion.", rating: "Thumbs Down")
@@ -29,6 +31,14 @@ struct ContentView: View {
                     }
                 }
             }.navigationBarTitle("Student Reviews")
+             .navigationBarItems(trailing: Button("Add") {
+                self.showingAddReview.toggle()
+            })
+            //A sheet is a screen appearing over the current screen. Similar to modal view controller.
+            .sheet(isPresented: $showingAddReview) {
+                    //as soon as showingAddReview is true, this will be shown.
+                AddView().environment(\.managedObjectContext, self.moc)
+            }
         }
     }
 }
